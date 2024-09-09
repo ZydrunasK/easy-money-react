@@ -1,0 +1,68 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+.hero .badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+.hero .main-title {
+    font-size: 60px;
+}
+.hero .main-title > span {
+    color: #1E68F0;
+}
+.hero .text {
+    font-size: 25px;
+    width: 550px;
+    position: relative;
+}
+.hero .description {
+    color: grey;
+    font-size: 25px;
+}
+.hero .pic-guy {
+    width: 800px;
+}
+.crazy {
+    display: inline-block;
+    color: purple;
+    border: 2px solid #00B8D7;
+    padding: 0 15px;
+    transform: rotate(-5deg);
+}
+.crazy::before,
+.crazy::after,
+.sqr::before,
+.sqr::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border: 2px solid #00B8D7;
+}
+.crazy::before {
+    top: -6px;
+    left: -6px;
+}
+.crazy::after {
+    top: -6px;
+    right: -6px;
+}
+.crazy .sqr::before {
+    bottom: -6px;
+    left: -6px;
+}
+.crazy .sqr::after {
+    bottom: -6px;
+    right: -6px;
+}
